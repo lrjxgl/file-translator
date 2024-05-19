@@ -1,6 +1,8 @@
 # file-translator
 利用AI大模型或者api翻译文件，支持中英文翻译，支持pdf、docx、txt、html。
 
+![](static/1.png)
+![](static/index.png)
 # 翻译模型
 默认采用阿里千问Qwen1.5-14B模型.
 

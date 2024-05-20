@@ -6,6 +6,14 @@
 # 翻译模型
 默认采用阿里千问Qwen1.5-14B-Chat-GPTQ-Int4模型.可以在lib/fanyi_qianwen.py更改模型。
 
+也可以采用线上大模型接口
+
+https://help.aliyun.com/zh/dashscope/developer-reference/api-details?spm=a2c4g.11186623.0.0.c9c946c10uY6YR
+
+set DASHSCOPE_API_KEY="xxx"
+
+python gradio_app.py
+
 # 安装方法
 
 环境依赖

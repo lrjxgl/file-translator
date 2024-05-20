@@ -8,6 +8,8 @@ import time
 import gradio as gr
 import mammoth
 
+
+
 def replace_whitespace_with_html(s):
     # 将空格替换为&nbsp;
     s = s.replace(' ', '&nbsp;')
@@ -66,7 +68,10 @@ def infer(input_file):
         return content,fanyi_content,doc_file_zh
 
 with gr.Blocks(title="文档翻译") as demo:
-    gr.Label("文件翻译",container=None)
+    
+    gr.Markdown("""
+    # 文件翻译
+    """)
     up=gr.File( label="PDF文件")
     
     

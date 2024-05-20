@@ -3,3 +3,4 @@ gradio
 beautifulsoup4
 pdf2docx 
 transformers 
+dashscope

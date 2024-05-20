@@ -30,7 +30,7 @@ def fanyi(text):
 def en2zh(prompt):
     print("翻译",prompt)
     messages=[]
-    messages.append({"role": "user", "content": "现在请当作一个英语翻译助手，我输入的英文你翻译成中文，我输入中文你翻译成英文，只返回翻译后的文字。内容："+prompt})
+    messages.append({"role": "user", "content": "现在请当作一个英语翻译助手，我输入的英文你翻译成中文，我输入中文你翻译成英文，只要给我返回翻译后的文字，无需返回原文。内容："+prompt})
     response = Generation.call(model="qwen-turbo",
                                messages=messages,
                                # 设置随机数种子seed，如果没有设置，则随机数种子默认为1234
